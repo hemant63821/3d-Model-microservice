@@ -6,7 +6,7 @@ const Transport = require('../model/Transport');
 
 router.get('/', async (req, res, next) => {
     try {
-        var trans = await Furniture.find().exec();
+        var trans = await Transport.find().exec();
         res.status(201).json({
             status: 200,
             message: 'success',
